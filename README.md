@@ -12,8 +12,8 @@ Very small size: ~7 MB (alpine based). Uses about 2 MB RAM when running.
 
 **Dockerfile:**
 ```
-FROM iamfreee/docker-nginx-static-spa:latest
-COPY /dist /var/www/html
+FROM avencera/docker-nginx-spa:latest
+COPY /app/build /var/www/html
 ```
 
 In the example above, the production build of the app is in the local `dist` folder and is moved to the default nginx serve path to be served.
